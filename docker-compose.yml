@@ -20,6 +20,8 @@ services:
       URL_JAEGER: http://jaeger:14268/api/traces
     ports:
       - "8080:8080"
+    command: > 
+        bash -c "mvnw clean install"
 
   jaeger:
     container_name: jaeger
