@@ -1,0 +1,8 @@
+br\com\desafio\model\Indicador.class
+br\com\desafio\model\RetornoBancoMundial.class
+br\com\desafio\resource\BancoMundialResource.class
+br\com\desafio\model\Pais.class
+br\com\desafio\service\BancoMundialService.class
+br\com\desafio\model\Pobreza.class
+br\com\desafio\GreetingResource.class
+br\com\desafio\model\Paginacao.class

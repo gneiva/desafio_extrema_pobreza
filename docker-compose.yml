@@ -1,0 +1,39 @@
+version: '3.5' 
+services: 
+    angular-service: 
+      container_name: angularcontainer  
+      build: ./angular 
+      volumes: 
+        - './angular:/usr/src/app' 
+      ports: 
+        - '4200:4200'
+      command: > 
+        bash -c "npm install && ng serve --host 0.0.0.0 --port 4200 --disable-host-check."
+
+
+  quarkus-build:
+    build:
+      context: .
+      dockerfile: /quarkus/src/main/docker/Dockerfile
+
+    environment:
+      URL_JAEGER: http://jaeger:14268/api/traces
+    ports:
+      - "8080:8080"
+     command: > 
+        bash -c "mvnw clean install"
+
+
+  jaeger:
+    container_name: jaeger
+    image: jaegertracing/all-in-one:latest
+    environment:
+      COLLECTOR_ZIPKIN_HTTP_PORT: 9411
+    ports:
+      - 5775:5775/udp
+      - 6831:6831/udp
+      - 6832:6832/udp
+      - 5778:5778
+      - 16686:16686
+      - 14268:14268
+      - 9411:9411
