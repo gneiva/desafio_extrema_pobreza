@@ -2,19 +2,19 @@
 Sistema para prover a quantidade de pessoas em situação de extrema pobreza no mundo.
 
 
-<Br><br><br>
+<Br><br>
 
 
-# Historias de Usuário
-# H1 - Consultar dados de cotação na API do Banco Mundial
-Microsserviço responsável por solicitar os dados à API do Banco Mundial.
+## Historias de Usuário
+### H1 - Consultar dados de cotação na API do Banco Mundial
+Microsserviço responsável por solicitar os dados à API do Banco Mundial.<Br><br>
 
 
-# H2 - Provimento de interface gráfical
+### H2 - Provimento de interface gráfical
 Microsserviço de provimento de interface gráfica para viabilização de interação com o usuário. O microsserviço não deve se comunicar diretamente com a API do Banco Mundial.
 <Br><br><br>
 
-# instalação do projeto
+### instalação do projeto
 O docker-compose.yml contempla toda a solução.
 
 Para rodar em ambiente de teste e somente o básico <br>
