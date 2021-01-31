@@ -19,6 +19,7 @@ export class IndicadorService  {
   }
 
   public loadPobreza(idPais: String): Observable<any> {
+    console.log(idPais);
     return this.http.get(
       `${this.BASE_PATH}/pais/${idPais}`,
       this.httpOptions
