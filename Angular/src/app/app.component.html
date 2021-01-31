@@ -1,8 +1,8 @@
 <h1>
   Quantidade de pessoas em situação de extrema pobreza no mundo
 </h1>
-<p>
+<form>
   <label>Informe o codigo do país</label><br>
-  <input type="text" ngModel="pais" /> 
+  <input id="pais" type="text" [(ngModel)]="pais" name="first"/>
   <input type="button" value="Consultar" (click)="consultaPais()">
-</p>
+</form>

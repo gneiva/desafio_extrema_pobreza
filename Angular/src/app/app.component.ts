@@ -15,6 +15,7 @@ export class AppComponent {
   title = 'angular';
   pais: String = '';
   consultaPais(){
+    console.log(this.pais);
     console.log(this.indicadorService.loadPobreza(this.pais));
   }
 }
