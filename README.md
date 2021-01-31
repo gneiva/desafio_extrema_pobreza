@@ -1,6 +1,8 @@
 # Desafio Extrema Pobreza
 Sistema para prover a quantidade de pessoas em situação de extrema pobreza no mundo.
-<hr>
+
+
+<Br><br><br>
 
 
 # Historias de Usuário
@@ -11,7 +13,6 @@ Microsserviço responsável por solicitar os dados à API do Banco Mundial.
 # H2 - Provimento de interface gráfical
 Microsserviço de provimento de interface gráfica para viabilização de interação com o usuário. O microsserviço não deve se comunicar diretamente com a API do Banco Mundial.
 <Br><br><br>
-  <hr>
 
 # instalação do projeto
 O docker-compose.yml contempla toda a solução.
