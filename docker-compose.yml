@@ -16,7 +16,7 @@ services:
     quarkus-build:
       build:
         context: .
-        dockerfile: /quarkus/src/main/docker/Dockerfile
+        dockerfile: ./Quarkus/src/main/docker/Dockerfile.jvm 
 
       environment:
         URL_JAEGER: http://jaeger:14268/api/traces
