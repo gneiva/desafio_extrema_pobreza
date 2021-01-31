@@ -10,6 +10,7 @@ services:
       command: > 
         bash -c "npm install && ng serve --host 0.0.0.0 --port 4200 --disable-host-check."
 
+
   quarkus-build:
     build:
       context: .
@@ -33,5 +34,3 @@ services:
       - 16686:16686
       - 14268:14268
       - 9411:9411
-    networks:
-      - mongo-compose-network
