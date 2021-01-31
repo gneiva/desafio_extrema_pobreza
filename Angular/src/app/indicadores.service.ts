@@ -7,7 +7,7 @@ import { Router } from '@angular/router';
 @Injectable({
   providedIn: 'root'
 })
-export class CotacaoService  {
+export class IndicadorService  {
 
   private BASE_PATH = `https://localhost:8080/banco-mundial`;
     httpOptions = {
