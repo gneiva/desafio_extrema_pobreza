@@ -14,8 +14,8 @@ export class IndicadorService  {
     headers: new HttpHeaders({'Content-Type': 'application/json'})
   };
 
-  constructor(private http: HttpClient, private router: Router) {
-    
+  constructor(private http: HttpClient) {
+   
   }
 
   public loadPobreza(idPais: String): Observable<any> {
